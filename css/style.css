@@ -1,0 +1,674 @@
+/* Geral */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0d1625;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0px;
+  position: relative;
+}
+
+/* Header */
+
+header .bg-header_info {
+  background: #755c15;
+}
+
+header .header_info {
+  color: #ffffff;
+  font: normal normal normal 17px/20px Roboto;
+  padding: 6px 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header .header_info a {
+  color: white;
+}
+
+header .header_info img {
+  width: 29px;
+  height: 29px;
+}
+
+header .header_info .header_contato {
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+header .header_info .header_sociais {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header .bg-header_menu {
+  background: #080e19;
+}
+
+header .header_menu {
+  font: normal normal normal 17px/20px Montserrat;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+header .logo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+header .menu ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header .menu ul > a {
+  color: white;
+  display: block;
+  padding: 15px;
+  font: normal normal bold 16px/19px Montserrat;
+  border-left: 1px solid #737c8b;
+}
+
+header .menu ul > a:first-child {
+  border-left: 0;
+}
+
+header .menu img {
+  margin-left: 10px;
+  display: none;
+}
+
+header .menu ul > a:hover img {
+  display: inline;
+}
+
+@media (max-width: 1470px) {
+  header .menu ul > a {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 1380px) {
+  header .menu ul > a {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 968px) {
+  header .menu ul > a {
+    padding: 5px;
+    border-left: 0;
+  }
+}
+
+header .menu .dropdown_posgrad,
+header .menu .dropdown_imprensa,
+header .menu .dropdown_atendimento {
+  visibility: hidden;
+  display: none;
+}
+
+header .menu .posgrad {
+  position: absolute;
+  height: 320px;
+  width: 672px;
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  top: 90px;
+  left: 280px;
+}
+
+header .menu .imprensa {
+  position: absolute;
+  height: 190px;
+  width: 224px;
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  top: 90px;
+  right: 330px;
+}
+
+header .menu .atendimento {
+  position: absolute;
+  height: 320px;
+  width: 224px;
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  top: 90px;
+  right: 0px;
+}
+
+header .menu .posgrad > a:hover,
+header .menu .imprensa > a:hover,
+header .menu .atendimento > a:hover {
+  background-color: #455064;
+  color: #ffffff;
+}
+
+header .menu .arrow {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid #ffffff;
+  position: absolute;
+  display: block;
+}
+
+header .menu .posgrad-arrow {
+  top: 70px;
+  left: 570px;
+}
+
+header .menu .imprensa-arrow {
+  top: 70px;
+  right: 400px;
+}
+
+header .menu .atendimento-arrow {
+  top: 70px;
+  right: 30px;
+}
+
+header .menu .posgrad > a,
+header .menu .imprensa > a,
+header .menu .atendimento > a {
+  border: 1px solid #a2a7b12f;
+  display: block;
+  width: 222px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font: normal normal normal 13px/16px Montserrat;
+  color: #17253e;
+}
+
+header .a_posgrad:hover + .dropdown_posgrad,
+header .a_imprensa:hover + .dropdown_imprensa,
+header .a_atendimento:hover + .dropdown_atendimento {
+  visibility: visible;
+  display: block;
+}
+
+header .dropdown_posgrad:hover,
+.posgrad-arrow:hover,
+header .dropdown_imprensa:hover,
+.imprensa-arrow:hover,
+header .dropdown_atendimento:hover,
+.atendimento-arrow:hover {
+  visibility: visible;
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  header .menu .dropdown_posgrad,
+  header .menu .dropdown_imprensa,
+  header .menu .dropdown_atendimento,
+  header .a_posgrad:hover + .dropdown_posgrad,
+  header .a_imprensa:hover + .dropdown_imprensa,
+  header .a_atendimento:hover + .dropdown_atendimento,
+  header .dropdown_posgrad:hover,
+  .posgrad-arrow:hover,
+  header .dropdown_imprensa:hover,
+  .imprensa-arrow:hover,
+  header .dropdown_atendimento:hover,
+  .atendimento-arrow:hover,
+  header .menu ul > a:hover img {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+/* Banner */
+
+.banner {
+  min-height: 507px;
+  background-color: #214c24;
+}
+
+.banner .banner-img {
+  width: 100%;
+  min-height: 507px;
+  background: url("../img/medical-research-Q4KU24T.png") no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner h1 {
+  font: normal normal bold 61px/74px Montserrat;
+  color: white;
+}
+
+.banner h1 span {
+  border-bottom: 10px solid #af8f34;
+}
+
+.banner .banner-img::after {
+  content: "";
+  width: 320px;
+  height: 150px;
+  position: absolute;
+  right: 0;
+  top: 600px;
+  background: url(../img/circles_yellow.png);
+  visibility: visible;
+  display: block;
+}
+
+@media (max-width: 1290px) {
+  .banner .banner-img::after {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+/* Matriculas Section */
+
+.matricula {
+  margin: 0px 10px;
+}
+
+.matricula .matricula_flex {
+  margin: 60px 10px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.matricula .matricula_flex .matricula_info {
+  margin: 0 70px;
+  width: 300px;
+}
+
+@media (max-width: 1290px) {
+  .matricula .matricula_flex .matricula_info {
+    margin-top: 50px;
+  }
+}
+
+.matricula .matricula_flex .matricula_info .matricula_info_linha {
+  display: flex;
+  align-items: center;
+  font: normal normal normal 16px/19px Montserrat;
+}
+
+.matricula .matricula_flex .matricula_info .matricula_info_linha h2 {
+  font: normal normal bold 16px/19px Montserrat;
+}
+
+.matricula .matricula_flex .matricula_info .matricula_info_linha img {
+  margin: 20px;
+}
+
+.matricula .matricula_texto {
+  font: normal normal normal 25px/30px Roboto;
+  margin: 20px;
+  text-align: justify;
+}
+
+.matricula .matricula_div_button {
+  position: relative;
+  margin-left: 15px;
+  margin-top: 50px;
+}
+
+.matricula .matricula_div_button button {
+  background-color: #b89b4b;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  width: 308px;
+  height: 63px;
+  font: normal normal normal 18px/22px Montserrat;
+  color: #ffffff;
+  position: relative;
+}
+
+.matricula .matricula_div_button::after {
+  content: "";
+  position: absolute;
+  border: 2px solid #b9bdc4;
+  width: 308px;
+  height: 63px;
+  top: -10px;
+  left: 7px;
+}
+
+/* Duvidas */
+
+.duvidas {
+  margin-top: 70px;
+  margin-bottom: 170px;
+  position: relative;
+}
+
+.duvidas .duvidas_flex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.duvidas .duvidas_flex h1 {
+  font: normal normal bold 53px/64px Montserrat;
+}
+
+.duvidas .duvidas_underline {
+  border-bottom: 9px solid #af8f34;
+}
+/* 
+.duvidas .accordion {
+  position: relative;
+}
+
+.duvidas .bg-accordion {
+  position: absolute;
+  width: 257px;
+  height: 257px;
+  background-color: #a7831f;
+} */
+
+.duvidas::after {
+  content: "";
+  width: 120px;
+  height: 550px;
+  position: absolute;
+  left: 0;
+  top: 20px;
+  background: url(../img/circles_blue.png);
+  visibility: visible;
+  display: block;
+}
+
+@media (max-width: 1290px) {
+  .duvidas::after {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+.bg-accordion {
+  position: relative;
+}
+
+.duvidas .bg-accordion::before {
+  content: "";
+  height: 257px;
+  width: 257px;
+  background-color: #a7831f;
+  position: absolute;
+  right: 135px;
+  top: -15px;
+  z-index: -1;
+}
+
+.duvidas input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.row {
+  display: flex;
+  margin-top: 70px;
+}
+
+.row .col {
+  flex: 1;
+}
+
+/* Accordion styles */
+.tab {
+  width: 80%;
+  font: normal normal bold 30px/37px Montserrat;
+  color: #17253e;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.tab-label {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background: #d9d9d9;
+  font-weight: bold;
+  cursor: pointer;
+  /* Icon */
+}
+.tab-label::after {
+  content: url(../img/icon_arrow_back.svg);
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transition: all 0.35s;
+}
+.tab-content {
+  max-height: 0;
+  padding: 0 1em;
+  font: normal normal normal 25px/35px Roboto;
+  color: #0d1625;
+  background: #737c8b;
+  transition: all 0.35s;
+  -webkit-box-shadow: inset 0px 0px 20px -10px #000000;
+  box-shadow: inset 0px 0px 20px -10px #000000;
+}
+input:checked + .tab-label::after {
+  transform: rotate(180deg);
+}
+input:checked ~ .tab-content {
+  max-height: 100vh;
+  padding: 1em;
+}
+
+/* Footer */
+
+footer {
+  padding: 30px 10px;
+  background-color: #04070b;
+}
+
+footer .arrow_up {
+  align-self: flex-end;
+}
+
+footer .footer_flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+footer .footer_flex_2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer .mapa {
+  flex: 1 2 50%;
+  height: 550px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1136px) {
+  footer .mapa {
+    height: 100%;
+  }
+}
+
+footer h2 {
+  font: normal normal bold 28px/34px Montserrat;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+footer .footer_underline {
+  border-bottom: 6px solid #af8f34;
+}
+
+footer .mapa_coluna1 {
+  flex: 1 2 300px;
+}
+
+footer .mapa_coluna2 {
+  flex: 1 2 250px;
+  padding-top: 54px;
+}
+
+@media (max-width: 1136px) {
+  footer .mapa_coluna2 {
+    padding-top: 0px;
+  }
+}
+
+footer .vertical_line {
+  border-left: 3px solid #af8f34;
+  height: 30px;
+}
+
+footer .mapa_items > li {
+  margin: 15px 0;
+}
+
+footer .mapa_items > li > a {
+  font: normal normal normal 16px/19px Montserrat;
+  color: #ffffff;
+  padding-left: 7px;
+}
+
+footer .mapa_subitems > li {
+  margin-left: 25px;
+  margin-top: 5px;
+}
+
+footer .mapa_subitems > li > a {
+  font: normal normal normal 16px/25px Montserrat;
+  color: #8a919e;
+}
+
+footer .contato {
+  flex: 1 2 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .contato .contato_item {
+  font: normal normal normal 24px/29px Montserrat;
+  color: #ffffff;
+  margin: 7px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+footer .contato .contato_item a {
+  color: #ffffff;
+}
+
+footer .contato .contato_item > p {
+  margin-left: 25px;
+}
+
+footer .contato .contato_item_sociais {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+footer .contato .contato_item_sociais > a {
+  margin-right: 24px;
+}
+
+footer .newsletter_flex_inputs {
+  display: flex;
+}
+
+footer .newsletter .newsletter_div_input {
+  position: relative;
+}
+
+footer .newsletter input {
+  background: #04070b;
+  border: 2px solid #737c8b;
+  width: 300px;
+  height: 55px;
+  font: normal normal bold 25px/30px Montserrat;
+  color: #8a919e;
+  position: relative;
+  padding: 0;
+  padding-left: 15px;
+  z-index: 5;
+}
+
+footer .newsletter .newsletter_div_input::after {
+  content: "";
+  position: absolute;
+  border: 2px solid #a7831f;
+  width: 315px;
+  height: 55px;
+  top: 7px;
+  left: 7px;
+}
+
+footer .newsletter .newsletter_div_button {
+  position: relative;
+  margin-left: 15px;
+}
+
+footer .newsletter button {
+  background-color: #737c8b;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  width: 150px;
+  height: 59px;
+  font: normal normal normal 18px/22px Montserrat;
+  color: #ffffff;
+  position: relative;
+  z-index: 5;
+}
+
+footer .newsletter .newsletter_div_button::after {
+  content: "";
+  position: absolute;
+  border: 2px solid #a7831f;
+  width: 146px;
+  height: 55px;
+  top: 7px;
+  left: 7px;
+}
+
+footer .copyright_logo {
+  align-self: center;
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+footer .copyright {
+  align-self: center;
+  margin-bottom: 40px;
+}
